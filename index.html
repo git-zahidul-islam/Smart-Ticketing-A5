@@ -14,9 +14,9 @@
 
 <body>
     <header>
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto space-y-4">
             <!-- navbar -->
-            <nav class="navber-main border-2">
+            <nav class=" navber-main">
                 <div class="navbar bg-base-100">
                     <div class="navbar-start">
                         <div class="dropdown">
@@ -35,7 +35,7 @@
                                 <li><a>Search</a></li>
                             </ul>
                         </div>
-                        <a class="text-4xl font-extrabold">P-Ticket</a>
+                        <a class="text-3xl lg:text-4xl font-extrabold">P-Ticket</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
@@ -54,8 +54,47 @@
                 </div>
             </nav>
             <!-- banner -->
-            <div>
-
+            <div class="h-[550px] bg-cover bg-center bg-no-repeat">
+                <div
+                    class="bg-[url(images/banner.png)] bg-no-repeat h-full rounded-3xl flex flex-col justify-center items-center gap-6">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-center text-white leading-[68px]">
+                        End-to-End Travel
+                        with <br> <br><span class="text-[#1DD100]">P
+                            Paribahan</span></h1>
+                    <p class="text-lg w-[320px] lg:w-[650px] text-center text-white">Yes, you can run unit tests and
+                        view the results
+                        directly
+                        within the app. The
+                        integrated testing
+                        features allow for a
+                        streamlined.</p>
+                    <button id="buyTicket"
+                        class="bg-[#1DD100] py-5 px-7 rounded-xl text-xl font-bold text-[#030712]">Buy
+                        Tickets</button>
+                </div>
+                <div class="flex lg:flex-row md:flex-row flex-col justify-center gap-5 relative -translate-y-10">
+                    <div class="card justify-center flex flex-row gap-4 px-7 py-5 border-b-2 border-[#1DD100] bg-white">
+                        <img class="w-12 h-12" src="images/people.png" alt="">
+                        <div>
+                            <h4 class="font-extrabold font-inter">500k+</h4>
+                            <p class="text-[#030712]">Registered User</p>
+                        </div>
+                    </div>
+                    <div class="card justify-center flex flex-row gap-4 px-7 py-5 border-b-2 border-[#1DD100] bg-white">
+                        <img class="w-12 h-12" src="images/ticket-cupon.png" alt="">
+                        <div>
+                            <h4 class="font-extrabold font-inter">1.7 Lacks</h4>
+                            <p class="text-[#030712]">Tickets sold</p>
+                        </div>
+                    </div>
+                    <div class="card justify-center flex flex-row gap-4 px-7 py-5 border-b-2 border-[#1DD100] bg-white">
+                        <img class="w-12 h-12" src="images/stoppage.png" alt="">
+                        <div>
+                            <h4 class="font-extrabold font-inter">80k+</h4>
+                            <p class="text-[#030712]">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
