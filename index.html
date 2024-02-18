@@ -223,7 +223,101 @@
                 </div>
             </div>
             <!-- seat plan here -->
-
+            <div class="max-w-6xl mx-auto flex lg:flex-row flex-col mt-7 bg-[#fff] lg:rounded-2xl rounded-lg">
+                <div class="flex-1 flex flex-col gap-5  lg:p-10 p-5 ">
+                    <h1 class="text-2xl font-semibold">
+                        Select Your Seat
+                    </h1>
+                    <div class="border-[1px] border-dashed border-[#03071233]"></div> <!-- divider -->
+                    <div class="flex justify-between">
+                        <div class="flex justify-center items-center gap-2">
+                            <img class="border-2 border-dashed" src="./images/seat-gray.png" alt="">
+                            <p class="text-lg font-medium text-[#03071299]">Available</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-2">
+                            <img class="border-2 border-dashed" src="./images/seat-green-filled.png" alt="">
+                            <p class="text-lg font-medium text-[#1DD100]">Selected</p>
+                        </div>
+                    </div>
+                    <div class="border-[1px] border-dashed border-[#03071233]"></div> <!-- divider -->
+                    <div class="flex justify-end">
+                        <button class="btn"><img src="images/wheel.svg" alt=""></button>
+                    </div>
+                    <!-- bus seat  -->
+                    <div class="flex justify-between lg:gap-12 md:gap12 gap-6">
+                        <div class="grid grid-cols-3 gap-6">
+                            <button class="bg-none">A</button>
+                            <button class="btn px-8">A1</button>
+                            <button class="btn px-8">A2</button>
+                            <button class="bg-none">B</button>
+                            <button class="btn px-8">B1</button>
+                            <button class="btn px-8">B2</button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <button class="btn px-8">A3</button>
+                            <button class="btn px-8">A4</button>
+                            <button class="btn px-8">B3</button>
+                            <button class="btn px-8">B4</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- divider between -->
+                <div class="flex flex-col gap-5 lg:p-10 p-5 flex-1 font-sans">
+                    <div>
+                        <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+                    </div>
+                    <div class="border-[1px] border-dashed border-[#03071233]"></div>
+                    <div class="bg-[#F7F8F8] p-7 rounded-lg flex flex-col gap-5">
+                        <div class="flex justify-between font-medium text-sm">
+                            <p>Seat <span id="select-count" class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                        <div class="border-[1px] border-dashed border-[#03071233]"></div>
+                        <div id="price-append" class="flex justify-between text-sm font-normal">
+                            <!-- here price append -->
+                        </div>
+                        <div class="border-[1px] border-dashed border-[#03071233]"></div>
+                        <div class="flex justify-between text-sm font-medium">
+                            <p>Total Price</p>
+                            <p>BDT 1100</p>
+                        </div>
+                        <div class="flex justify-between bg-[#fff] p-2 rounded-xl">
+                            <input class="outline-none" type="text" placeholder="Have any copupon?">
+                            <button class="py-1 px-3 bg-[#1DD100] text-white rounded-lg">Apply</button>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium">
+                            <p>Grand Total</p>
+                            <p>BDT 1100</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-sm">Passenger Name*</h1>
+                        <div class="border-2 py-3 pl-3 rounded-lg">
+                            <input class="outline-none" type="text" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-sm">Phone Number**</h1>
+                        <div class="border-2 py-3 pl-3 rounded-lg">
+                            <input class="outline-none" type="number" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-sm">Email ID*</h1>
+                        <div class="border-2 py-3 pl-3 rounded-lg">
+                            <input class="outline-none" type="email" placeholder="Enter your email id">
+                        </div>
+                    </div>
+                    <div class="bg-[#1DD100] px-7 py-5 text-center rounded-xl">
+                        <button class="text-white text-lg font-bold">Next</button>
+                    </div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <a class="border-b-2" href="">Terms and Conditions</a>
+                        <a class="border-b-2" href="">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div> <!-- my div -->
         </section>
     </main>
     <footer></footer>
