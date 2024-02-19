@@ -120,7 +120,7 @@
                     <div
                         class="coupne-Box-1 flex lg:gap-28 gap-4 bg-[#FFBF0F] lg:py-8 py-3 lg:px-10 px-3 lg:rounded-3xl rounded-xl">
                         <div class="font-inter space-y-2">
-                            <h1 class="lg:font-black font-bold lg:text-4xl text-2xl">15% OFF</h1>
+                            <h1 class="lg:font-black font-bold lg:text-4xl text-2xl">20% OFF</h1>
                             <h4 class="lg:font-semibold font-normal lg:text-xl text-sm">On Your Next Purchase</h4>
                             <p class="font-medium lg:text-lg text-sm">use by January 2024</p>
                         </div>
@@ -174,7 +174,7 @@
                                 src="images/seat-green.png" alt="green field">
                             <h2
                                 class="lg:font-medium md:font-medium font-light lg:text-lg md:text-lg text-xs text-[#1DD100]">
-                                <span id="seats-left">8</span> Seats left
+                                <span id="available-seat">8</span> Seats left
                             </h2>
                         </div>
                     </div>
@@ -269,29 +269,29 @@
                     <div class="border-[1px] border-dashed border-[#03071233]"></div>
                     <div class="bg-[#F7F8F8] p-7 rounded-lg flex flex-col gap-5">
                         <div class="flex justify-between font-medium text-sm">
-                            <p>Seat <span id="get-seats" class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
+                            <p>Seat <span id="select-count" class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
                         <div class="border-[1px] border-dashed border-[#03071233]"></div>
-                        <div id="price" class="flex justify-between text-sm font-normal">
-                            <!-- price append -->
-                            <p id="serial-append"></p>
-                            <p id="name-append"></p>
-                            <p id="price-append"></p>
+                        <div id="totalPriceValue" class="flex justify-between text-sm font-normal">
+                            <!-- append -->
+                            <p id="seatNumber"></p>
+                            <p id="economy"></p>
+                            <p id="price"></p>
                         </div>
                         <div class="border-[1px] border-dashed border-[#03071233]"></div>
                         <div class="flex justify-between text-sm font-medium">
                             <p>Total Price</p>
-                            <p>BDT 1100</p>
+                            <p id="total">BDT 0</p>
                         </div>
-                        <div class="flex justify-between bg-[#fff] p-2 rounded-xl">
-                            <input class="outline-none" type="text" placeholder="Have any copupon?">
-                            <button class="py-1 px-3 bg-[#1DD100] text-white rounded-lg">Apply</button>
+                        <div id="cupon-container" class="flex justify-between bg-[#fff] p-2 rounded-xl">
+                            <input id="inp-field" class="outline-none" type="text" placeholder="Have any coupon?">
+                            <button id="coupon" class="py-1 px-3 bg-[#1DD100] text-white rounded-lg">Apply</button>
                         </div>
                         <div class="flex justify-between text-sm font-medium">
                             <p>Grand Total</p>
-                            <p>BDT 1100</p>
+                            <p id="grand-total">BDT 0</p>
                         </div>
                     </div>
                     <div class="space-y-2">
@@ -301,9 +301,10 @@
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <h1 class="font-semibold text-sm">Phone Number**</h1>
+                        <h1 class="font-semibold text-sm">Phone Number*</h1>
                         <div class="border-2 py-3 pl-3 rounded-lg">
-                            <input class="outline-none" type="number" placeholder="Enter your phone number">
+                            <input id="inp-number" class="outline-none" type="number"
+                                placeholder="Enter your phone number">
                         </div>
                     </div>
                     <div class="space-y-2">
@@ -313,14 +314,38 @@
                         </div>
                     </div>
                     <div class="bg-[#1DD100] px-7 py-5 text-center rounded-xl">
-                        <button class="text-white text-lg font-bold">Next</button>
+                        <button id="modal" class="text-white text-lg font-bold"
+                            onclick="my_modal_5.showModal()">Next</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle mx-auto">
+                            <div class="modal-box">
+                                <div class="flex justify-center w-full">
+                                    <img class="lg:w-20 lg:h-20 w-16 h-16" src="images/success.png" alt="success">
+                                </div>
+                                <p class="py-4 lg:font-bold font-semibold lg:text-2xl text-lg text-[#27AE60]">SUCCESS
+                                </p>
+                                <div class="w-[410px] mx-auto">
+                                    <p class="lg:font-medium font-normal lg:text-base text-sm text-[#4A4A4A]">Thank you
+                                        for Booking Our Bus Seats.
+                                        We are working hard to find the best service and deals for you.
+                                    </p>
+                                    <p class="lg:font-semibold font-light text-sm text-[#4A4A4A]">
+                                        Shortly you will find a confirmation in your email.
+                                    </p>
+                                </div>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <button class="btn bg-[#27AE60] px-16 py-3">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                     <div class="flex justify-between text-sm font-medium">
                         <a class="border-b-2" href="">Terms and Conditions</a>
                         <a class="border-b-2" href="">Cancellation Policy</a>
                     </div>
                 </div>
-            </div> <!-- my div -->
+            </div>
         </section>
     </main>
     <footer></footer>
