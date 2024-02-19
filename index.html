@@ -68,9 +68,9 @@
                         integrated testing
                         features allow for a
                         streamlined.</p>
-                    <button id="buyTicket"
-                        class="bg-[#1DD100] py-5 px-7 rounded-xl text-xl font-bold text-[#030712]">Buy
-                        Tickets</button>
+                    <a href="#ticket-section"><button
+                            class="bg-[#1DD100] py-5 px-7 rounded-xl text-xl font-bold text-[#030712]">Buy
+                            Tickets</button></a>
                 </div>
                 <div class="flex lg:flex-row md:flex-row flex-col justify-center gap-5 relative -translate-y-10">
                     <div class="card justify-center flex flex-row gap-4 px-7 py-5 border-b-2 border-[#1DD100] bg-white">
@@ -140,7 +140,7 @@
             </div>
         </section>
         <!-- ph paribahan -->
-        <section
+        <section id="ticket-section"
             class="max-w-[1440px] mx-auto bg-[#F7F8F8] lg:mt-20 mt-8 border-t-2 border-[#1DD100] rounded-tr-[80px] rounded-tl-[80px]  px-2">
             <!-- summary -->
             <div class="max-w-6xl mx-auto lg:mt-20 mt-8 space-y-2">
@@ -174,7 +174,7 @@
                                 src="images/seat-green.png" alt="green field">
                             <h2
                                 class="lg:font-medium md:font-medium font-light lg:text-lg md:text-lg text-xs text-[#1DD100]">
-                                <span id="seats-left">40</span> Seats left
+                                <span id="seats-left">8</span> Seats left
                             </h2>
                         </div>
                     </div>
@@ -247,17 +247,17 @@
                     <div class="flex justify-between lg:gap-12 md:gap12 gap-6">
                         <div class="grid grid-cols-3 gap-6">
                             <button class="bg-none">A</button>
-                            <button class="btn px-8">A1</button>
-                            <button class="btn px-8">A2</button>
+                            <button id="a1" class="seat btn px-8">A1</button>
+                            <button id="a2" class="seat btn px-8">A2</button>
                             <button class="bg-none">B</button>
-                            <button class="btn px-8">B1</button>
-                            <button class="btn px-8">B2</button>
+                            <button id="b1" class="seat btn px-8">B1</button>
+                            <button id="b2" class="seat btn px-8">B2</button>
                         </div>
                         <div class="grid grid-cols-2 gap-6">
-                            <button class="btn px-8">A3</button>
-                            <button class="btn px-8">A4</button>
-                            <button class="btn px-8">B3</button>
-                            <button class="btn px-8">B4</button>
+                            <button id="a3" class="seat btn px-8">A3</button>
+                            <button id="a4" class="seat btn px-8">A4</button>
+                            <button id="b3" class="seat btn px-8">B3</button>
+                            <button id="b4" class="seat btn px-8">B4</button>
                         </div>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                     <div class="border-[1px] border-dashed border-[#03071233]"></div>
                     <div class="bg-[#F7F8F8] p-7 rounded-lg flex flex-col gap-5">
                         <div class="flex justify-between font-medium text-sm">
-                            <p>Seat <span id="select-count" class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
+                            <p>Seat <span id="get-seats" class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
