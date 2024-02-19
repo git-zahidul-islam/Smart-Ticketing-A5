@@ -2,6 +2,7 @@ const seats = document.querySelectorAll('.seat');
 // const seatsLeft = document.getElementById('seats-left');
 // const getSeats = document.getElementById('get-seats');
 
+
 let clicked = 0;
 for (let index = 0; index < seats.length; index++) {
     const element = seats[index];
@@ -20,10 +21,13 @@ for (let index = 0; index < seats.length; index++) {
             const getSeatsValue = getSeatsText + 1;
             getSeats.innerText = getSeatsValue;
             // append 
+            const priceAppend = document.getElementById('serial-append');
+            const p = document.createElement('p');
+            p.innerText = element.innerText
+            priceAppend.appendChild(p);
+            
             
         }
-        
-
 
 
     })
